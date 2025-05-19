@@ -3,6 +3,8 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Ancizar Serif", serif;
+
   --color-primary: #c08552;
   --color-primary-100: #f3e9dc;
   --color-primary-300: #895737;
@@ -12,15 +14,27 @@
   --radius-full: 9999px;
 }
 
-@layer base {
+/* @layer base {
   html {
     font-family: "Ancizar Serif", system-ui, serif;
   }
+} */
+
+a:hover {
+  @apply text-primary;
+}
+
+.animate, a, a:hover {
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition:  all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 /*
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-family: var(--font-sans);
 }
 
 @theme inline {

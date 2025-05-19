@@ -1,7 +1,7 @@
-import { Typography } from "@/ui/design-system/typography/typography"
-import { Container } from "../container/container"
 import { Button } from "@/ui/design-system/button/button"
+import { Typography } from "@/ui/design-system/typography/typography"
 import Link from "next/link"
+import { Container } from "../container/container"
 import { ActiveLink } from "./active-link"
 
 interface Props {
@@ -14,7 +14,7 @@ export const Navbar = ({ }: Props) => {
             <Container className="flex items-center justify-between py-2 gap-8">
                 <Link href="/">
                     <div className="flex items-center gap-2">
-                        <div>logo</div>
+                        <div className="font-display">logo</div>
                         <div className="flex flex-col">
                             <div className="text-black ">
                                 NEEDWORK
