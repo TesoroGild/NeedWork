@@ -1,4 +1,3 @@
-"use client";
 import api from "@/api/api";
 import { useEffect, useState } from "react";
 
